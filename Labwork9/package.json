@@ -1,0 +1,15 @@
+{
+  "name": "labwork9",
+  "version": "1.0.0",
+  "description": "work with modules",
+  "main": "script9.js",
+  "type": "module",
+  "scripts": {
+    "start": "node script9.js"
+  },
+  "author": "Yulia",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}
