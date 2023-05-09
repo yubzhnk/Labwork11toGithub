@@ -1,0 +1,236 @@
+ header {
+   height: 100px;
+   background-color: #130e0b;
+   border-radius: 10px;
+   margin: 2px;
+ }
+  
+ .header__menu {
+   display: flex;
+   justify-content: space-between;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 10px 0;
+ }
+
+ main {
+   min-height: 500px;
+   display: flex;
+   width: 100%;
+   border-radius: 10px;
+ }
+ 
+ footer {
+   min-height: 100px;
+   background-color:  #130e0b;
+   display: flex;
+   justify-content: center;
+   color: rgb(208, 207, 212);   
+   font-size: 20px;
+   border-radius: 10px;
+   margin: 2px;
+ }
+
+ #leftPanel,
+ #content,
+ #rightPanel {
+   background-color: #fff;
+   width: 100%;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+ }
+ 
+ #leftPanel {
+   background-color: rgb(53, 53, 88);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+ }
+
+ #rightPanel {
+   background-color: #ada8e7;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+ }
+
+ #content {
+   background-color: rgb(163, 189, 223);
+   padding: 30px 20px;
+ }
+ 
+ #content h2 {
+   text-align: center;
+ }
+ 
+ .loader {
+   border-top: 16px solid rgb(37, 37, 63);
+   border-right: 16px solid  rgb(37, 37, 63);
+   border-bottom: 16px solid rgb(201, 224, 255);
+   border-left: 16px solid rgb(201, 224, 255);
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   animation: spin 1.5s linear infinite;
+ }
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ ul {
+   list-style-type: none;
+ }
+ 
+ 
+ li:before {
+   content: "\25AA";
+   margin-right: 25px;   
+   color: rgb(231, 228, 238);   
+ }
+ 
+
+ button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 20px 30px;
+   margin: 10px 20px;
+   position: relative;
+   color: white;
+   border: 1px solid rgba(255, 255, 255, .4);
+   background: none;
+   font-weight: 300;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+ }
+ 
+ button:before, button:after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   box-sizing: border-box;
+ }
+
+ button:before {
+   bottom: 0;
+   left: 0;
+   border-left: 1px solid white;
+   border-top: 1px solid white;
+   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+ }
+
+ button:after {
+   top: 0;
+   right: 0;
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+   transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+ }
+
+ button:hover:before, 
+ button:hover:after {
+   height: 100%;
+   width: 100%;
+   opacity: 1;
+ }
+ 
+ button:hover:before {
+   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+ }
+
+ button:hover:after {
+   transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+ }
+
+ button:hover {
+   background: rgba(255, 255, 255, .2);
+ }
+ 
+ th {
+   width: 100px;
+  font-size: 20px;
+   color: rgb(17, 26, 44);
+   padding: 10px;
+   font-weight: bold;
+ }
+
+ table,
+ th,
+ td {
+   border: 1px solid rgb(225, 240, 255);
+   border-collapse: collapse;
+   padding: 8px;
+   margin: 0 auto;
+   text-align: center;
+   
+ }
+ 
+ tr {
+   background-color: rgb(121, 168, 214);
+   transition: all 0.5s;
+ }
+ 
+ tr.green {
+   transition: all 0.5s;
+   background-color: #73c562e3;
+   color: #962626;
+ }
+ 
+ td {
+   height: 35px;
+   
+ }
+ 
+ td button {
+   padding: 4px 0;
+ }
+ 
+ #surname {
+   cursor: pointer;
+ }
+ 
+ #getUsers {
+   display: block;
+   margin: 20px auto;
+ }
+ 
+ #searchInput {
+   height: 30px;
+   width: 180px;
+   border-radius: 10px;
+   border: 1px solid #791d91;
+   padding: 5px;
+   font-size: 20px;
+   font-family: inherit;
+   font-weight: 500;
+   text-align: center;
+   -webkit-box-shadow: 2px 1px 31px -1px rgb(95, 65, 95);
+   -moz-box-shadow: 2px 1px 31px -1px rgb(216, 135, 216);
+   box-shadow: 2px 1px 10px -1px rgb(207, 89, 207);
+ }
+ 
+ #searchButton {
+   display: block;
+   margin-top: 20px;
+ }
+ 
+ 
+ .scoreStyle{
+   font-size: 20px;
+   font-weight: bold;
+   margin: 10px;  
+ }
+ 
+ .editor{
+  font-size: 20px;
+  font-weight: bold;
+ }
+ 
+
